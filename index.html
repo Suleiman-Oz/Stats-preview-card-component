@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      background-color: rgb(2, 0, 27);
+    }
+    .container {
+      width: 400px;
+      margin: auto;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .box {
+      /* z-index: 1; */
+      border-radius: 10px;
+      height: 360px;
+      display: flex;
+      align-items: center;
+      color: white;
+      box-sizing: border-box;
+      background-color: rgb(5, 5, 41, 0.6);
+    }
+    .left {
+      
+      margin-left: 60px;
+      margin-right: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .blue {
+      color: hsl(278, 45%, 44%);
+    }
+    .left h2 {
+      margin-top: 40px;
+      font-size: xx-large;
+      font-weight: bolder;
+      padding-bottom: 30px;
+    }
+    .left  p {
+      font-size: 11pxpx;
+      font-weight: 100;
+      margin-bottom: 50px;
+    }
+    .left .info {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 80px;
+      font-weight: 900;
+      margin-top: 30px;
+      text-transform: uppercase;
+    }
+    .left div .sm {
+      font-size: 12px;
+      font-weight: 100;
+    }
+    .left div .bold {
+      font-size: larger;
+    }
+    .right {
+      z-index: -3;
+      /* background-color: hsl(278, 45%, 44%, 0.6); */
+    }
+    .right img {
+      border-radius: 0px 10px 10px 0px;
+     height: 350px;
+     /* z-index: 2; */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">
+      <div class="left">
+        <h2>Get <span class="blue">insights</span> that help your business grow.</h2>
+        <p>
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+        <div class="info">
+          <div>
+            <span class="bold">10k+</span>
+            <p class="sm">companies</p>
+          </div>
+          <div>
+            <span class="bold">314</span>
+            <p class="sm">templates</p>
+          </div>
+          <div>
+            <span class="bold">12m+</span>
+            <p class="sm"> queries</p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="images/image-header-desktop.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
